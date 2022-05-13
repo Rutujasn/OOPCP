@@ -1,4 +1,4 @@
-import java.security.NoSuchAlgorithmException;
+/*import java.security.NoSuchAlgorithmException;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.swing.*;   
@@ -39,4 +39,4 @@ public static void main(String[] args) throws Exception {
     f.setLayout(null);  
     f.setVisible(true);   
 }  
-}
+}*/
