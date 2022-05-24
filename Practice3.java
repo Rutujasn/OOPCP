@@ -26,11 +26,16 @@ public class Practice3 {
         b1.setBounds(100, 100, 200, 50);
         f.add(b1);
         f.add(tf);
+        
+        final JTextField kf = new JTextField();
+        kf.setBounds(100, 250, 200, 50);
+        f.add(kf);
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
                     tf.setText(EncryptionDescryptionAES.encrypt(tf.getText(), secretKey));
+                    kf.setText(secretKey.toString());
                 } catch (Exception e1) {
                     System.out.println("Function Ishu");
                 }
@@ -49,6 +54,7 @@ public class Practice3 {
             public void actionPerformed(ActionEvent e) {
                 try {
                     try {
+                        System.out.println(secretKey.toString());
                         tf.setText(EncryptionDescryptionAES.decrypt(tf.getText(), secretKey));
                     } catch (Exception e1) {
                         System.out.println("Function Ishu");
